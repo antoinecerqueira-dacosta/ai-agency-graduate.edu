@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Study on the Quiet Shift in How We Think</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        onyx: '#0a0a0a',
+                        surface: '#141414',
+                        surfaceLight: '#1f1f1f',
+                        ember: '#ff5a00',
+                        softEmber: '#ff8a4c',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            background-color: #0a0a0a; 
+            color: #f3f4f6; 
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 100%, rgba(255, 90, 0, 0.12) 0%, rgba(10, 10, 10, 1) 50%);
+        }
+        
+        .bracket-link::before { content: '['; color: #6b7280; transition: color 0.3s ease; margin-right: 6px; font-weight: 300; }
+        .bracket-link::after { content: ']'; color: #6b7280; transition: color 0.3s ease; margin-left: 6px; font-weight: 300; }
+        .bracket-link:hover::before, .bracket-link:hover::after { color: #ff5a00; }
+
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen selection:bg-ember selection:text-white">
+
+    <nav class="fixed w-full top-0 z-50 bg-onyx/80 backdrop-blur-md border-b border-gray-900 px-6 py-5 flex justify-between items-center transition-all">
+        <a href="#home" class="font-serif text-xl tracking-wide text-white hover:text-ember transition-colors">Agency & AI.</a>
+        
+        <div class="hidden md:flex space-x-10 text-xs font-medium tracking-[0.2em] uppercase text-gray-400">
+            <a href="#the-question" class="hover:text-white transition-colors">The Question</a>
+            <a href="#the-study" class="hover:text-white transition-colors">The Study</a>
+            <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+            <a href="#documents" class="hover:text-white transition-colors">Documents</a>
+        </div>
+        
+        <a href="#participate" class="bracket-link text-xs uppercase tracking-[0.2em] hover:text-ember transition-colors">Participate</a>
+    </nav>
+
+    <header id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative hero-glow pt-20">
+        <div class="max-w-4xl z-10">
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 text-white">
+                A study on the quiet shift in <span class="italic text-ember">how we think.</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl font-light mb-8 leading-relaxed max-w-2xl mx-auto">
+                For graduate students who use AI, and wonder where their thinking ends and the model's begins.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-xs tracking-widest uppercase text-gray-500 mb-12">
+                <span>Open to MTnG cohorts at the EUI</span>
+                <span class="hidden sm:inline">•</span>
+                <span>Pseudonymised</span>
+                <span class="hidden sm:inline">•</span>
+                <span>Voluntary</span>
+                <span class="hidden sm:inline">•</span>
+                <span>10 weeks</span>
+            </div>
+            <a href="#participate" class="bracket-link text-sm uppercase tracking-[0.2em] text-white hover:text-ember transition-colors">
+                Participate
+            </a>
+        </div>
+    </header>
+
+    <section id="the-question" class="py-24 px-6 max-w-4xl mx-auto">
+        <p class="text-ember font-serif italic text-xl mb-4">[ 01 ] The question</p>
+        <h2 class="font-serif text-4xl md:text-5xl mb-8 leading-tight text-white">
+            How does AI use shape the evolution of a graduate student's agency?
+        </h2>
+        <div class="space-y-6 text-gray-300 font-light text-lg leading-relaxed">
+            <p>
+                AI tools have moved from novelty to default. They draft emails, structure arguments, summarise readings, suggest the next thought before you've finished the previous one. The change is fast, and the questions worth asking are rarely loud ones.
+            </p>
+            <p>
+                This study follows a small group of graduate students for ten weeks. Not to prove a thesis or assign blame, but to listen carefully, through weekly self-documentation and three one-to-one conversations, to what people notice about themselves as their relationship with these tools settles into routine.
+            </p>
+            <p class="text-xl font-serif text-white pt-6 border-t border-gray-800">
+                Where does your thinking end, and the model's begin? <span class="text-gray-500 italic text-base block mt-2">The question this study is built around.</span>
+            </p>
+        </div>
+    </section>
+
+    <section id="the-study" class="py-24 px-6 bg-surface border-y border-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-ember font-serif italic text-xl mb-12 text-center">[ 02 ] The study, at a glance</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-800">
+                <div class="bg-surface p-8">
+                    <span class="block text-xs uppercase tracking-[0.2em] text-gray-500 mb-2">Duration</span>
+                    <span class="block font-serif text-4xl text-white mb-4">10wks</span>
+                    <p class="text-sm text-gray-400 font-light">A longitudinal cycle following participants across one term.</p>
+                </div>
+                <div class="bg-surface p-8">
+                    <span class="block text-xs uppercase tracking-[0.2em] text-gray-500 mb-2">Cohort</span>
+                    <span class="block font-serif text-4xl text-white mb-4">N≈25</span>
+                    <p class="text-sm text-gray-400 font-light">Master of Arts in Transnational Governance students at the EUI.</p>
+                </div>
+                <div class="bg-surface p-8">
+                    <span class="block text-xs uppercase tracking-[0.2em] text-gray-500 mb-2">Time per week</span>
+                    <span class="block font-serif text-4xl text-white mb-4">15min</span>
+                    <p class="text-sm text-gray-400 font-light">A short weekly self-documentation. No homework, no quizzes.</p>
+                </div>
+                <div class="bg-surface p-8">
+                    <span class="block text-xs uppercase tracking-[0.2em] text-gray-500 mb-2">Conversations</span>
+                    <span class="block font-serif text-4xl text-white mb-4">03</span>
+                    <p class="text-sm text-gray-400 font-light">Three semi-structured interviews of ~20 minutes, weeks 1, 5, 10.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+                <h3 class="font-serif text-3xl mb-6 text-white">Who can participate</h3>
+                <p class="text-gray-300 font-light mb-4 leading-relaxed">
+                    This study recruits exclusively from the student body of the <strong class="text-white font-medium">Master of Arts in Transnational Governance (MTnG)</strong> at the School of Transnational Governance, European University Institute, Florence.
+                </p>
+                <p class="text-gray-300 font-light mb-6 leading-relaxed">
+                    Participants are typically aged 20–30 and based within the EU/EEA for the duration of the 10-week study. Both cohorts are eligible.
+                </p>
+                <div class="bg-surfaceLight p-5 border-l-2 border-ember text-sm text-gray-400 font-light">
+                    For ethics and compliance reasons, participation is restricted to adults (18+) and excludes individuals defined as vulnerable under the EUI Data Protection Policy.
+                </div>
+            </div>
+            <div class="space-y-6">
+                <div class="flex justify-between items-end border-b border-gray-800 pb-3">
+                    <span class="text-sm uppercase tracking-widest text-gray-500">Total duration</span>
+                    <span class="font-serif text-xl text-white">10 wks</span>
+                </div>
+                <div class="flex justify-between items-end border-b border-gray-800 pb-3">
+                    <span class="text-sm uppercase tracking-widest text-gray-500">Weekly check-in</span>
+                    <span class="font-serif text-xl text-white">~15 min</span>
+                </div>
+                <div class="flex justify-between items-end border-b border-gray-800 pb-3">
+                    <span class="text-sm uppercase tracking-widest text-gray-500">Interviews</span>
+                    <span class="font-serif text-xl text-white">3 sessions</span>
+                </div>
+                <div class="flex justify-between items-end border-b border-gray-800 pb-3">
+                    <span class="text-sm uppercase tracking-widest text-gray-500 text-ember">Total time investment</span>
+                    <span class="font-serif text-xl text-ember">~4 hrs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-onyx border-t border-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-ember font-serif italic text-xl mb-4">[ 03 ] How it unfolds</p>
+            <h2 class="font-serif text-4xl mb-16 text-white">A short weekly check-in. Three quiet conversations. <span class="italic text-gray-500">That's it.</span></h2>
+            
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 group">
+                    <div class="md:w-1/4">
+                        <span class="text-4xl font-serif text-gray-800 group-hover:text-ember transition-colors">01</span>
+                        <p class="text-sm uppercase tracking-widest text-gray-500 mt-2">Week 1</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="text-xl font-serif text-white mb-3">Baseline survey & opening interview</h4>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            You'll begin with a short context-setting survey and a 20-minute opening conversation. We talk about your background, the way you currently work, and what your relationship with AI looks like at the start.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 group">
+                    <div class="md:w-1/4">
+                        <span class="text-4xl font-serif text-gray-800 group-hover:text-ember transition-colors">02</span>
+                        <p class="text-sm uppercase tracking-widest text-gray-500 mt-2">Weeks 1-10</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="text-xl font-serif text-white mb-3">Weekly self-documentation</h4>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            Each week, a short online survey with a small set of standardised questions and two open reflections. It takes 10–15 minutes. You complete it in your own time, in whichever language you prefer. The aim is to track quiet shifts: not to test you, not to grade you.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 group">
+                    <div class="md:w-1/4">
+                        <span class="text-4xl font-serif text-gray-800 group-hover:text-ember transition-colors">03</span>
+                        <p class="text-sm uppercase tracking-widest text-gray-500 mt-2">Week 5</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="text-xl font-serif text-white mb-3">Mid-point interview</h4>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            A second 20-minute conversation, in person or via Microsoft Teams, to look at what's shifting and what isn't. There are no right answers, we're interested in your experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 group">
+                    <div class="md:w-1/4">
+                        <span class="text-4xl font-serif text-gray-800 group-hover:text-ember transition-colors">04</span>
+                        <p class="text-sm uppercase tracking-widest text-gray-500 mt-2">Week 10</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="text-xl font-serif text-white mb-3">Final conversation</h4>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            A slightly longer closing interview (~25–30 min) to take stock of the term and look forward. Then the study closes, you receive a copy of the consent form, your data is pseudonymised, and the analysis begins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-surface border-t border-gray-900 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-serif text-3xl mb-6 text-white">Honesty over polish.</h2>
+            <p class="text-gray-300 font-light text-lg leading-relaxed mb-6">
+                The most useful answer is rarely the most articulate one. We ask you to be candid about how you actually work: messy patterns, half-formed thoughts, things you'd hesitate to say in a seminar. The study only works if participants feel safe enough to say what they mean.
+            </p>
+            <p class="text-gray-400 font-light leading-relaxed">
+                You can decline any question, withdraw at any moment, or take a week off if you need to. You keep your own data identifier (a 5-digit code only you know) so that withdrawal and rectification stay possible throughout.
+            </p>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 px-6 max-w-4xl mx-auto">
+        <p class="text-ember font-serif italic text-xl mb-4">[ 04 ] Common questions</p>
+        <h2 class="font-serif text-4xl mb-12 text-white">Before you say yes.</h2>
+        
+        <div class="space-y-4">
+            <details class="group bg-surface border border-gray-800 p-6 cursor-pointer hover:border-gray-600 transition-colors">
+                <summary class="font-serif text-xl text-white flex justify-between items-center">
+                    Will my professors or the school see my answers?
+                    <span class="text-ember group-open:rotate-45 transition-transform duration-300 text-2xl font-light">+</span>
+                </summary>
+                <div class="mt-4 text-gray-400 font-light leading-relaxed">
+                    No. Responses are pseudonymised by design and accessible only to the two researchers. Nothing you say in the survey or interview is shared with faculty, peers, or administrators.
+                </div>
+            </details>
+            
+            <details class="group bg-surface border border-gray-800 p-6 cursor-pointer hover:border-gray-600 transition-colors">
+                <summary class="font-serif text-xl text-white flex justify-between items-center">
+                    Do I need to be a heavy AI user to take part?
+                    <span class="text-ember group-open:rotate-45 transition-transform duration-300 text-2xl font-light">+</span>
+                </summary>
+                <div class="mt-4 text-gray-400 font-light leading-relaxed">
+                    Not at all. The study is interested in the full range of relationships people have with these tools, including avoidance, ambivalence, and skepticism. Light users and non-users contribute as much to the picture as enthusiasts.
+                </div>
+            </details>
+            
+            <details class="group bg-surface border border-gray-800 p-6 cursor-pointer hover:border-gray-600 transition-colors">
+                <summary class="font-serif text-xl text-white flex justify-between items-center">
+                    Can I withdraw mid-study?
+                    <span class="text-ember group-open:rotate-45 transition-transform duration-300 text-2xl font-light">+</span>
+                </summary>
+                <div class="mt-4 text-gray-400 font-light leading-relaxed">
+                    Yes, at any point and without explanation. You can also request that the data collected up to that point be deleted, provided your responses are still technically identifiable via your personal code.
+                </div>
+            </details>
+            
+            <details class="group bg-surface border border-gray-800 p-6 cursor-pointer hover:border-gray-600 transition-colors">
+                <summary class="font-serif text-xl text-white flex justify-between items-center">
+                    Will I be recorded?
+                    <span class="text-ember group-open:rotate-45 transition-transform duration-300 text-2xl font-light">+</span>
+                </summary>
+                <div class="mt-4 text-gray-400 font-light leading-relaxed">
+                    The three interviews are audio-recorded with your written consent. Recordings are transcribed locally on the researchers' hardware, then pseudonymised and the original audio files are deleted.
+                </div>
+            </details>
+            
+            <details class="group bg-surface border border-gray-800 p-6 cursor-pointer hover:border-gray-600 transition-colors">
+                <summary class="font-serif text-xl text-white flex justify-between items-center">
+                    What language do I respond in?
+                    <span class="text-ember group-open:rotate-45 transition-transform duration-300 text-2xl font-light">+</span>
+                </summary>
+                <div class="mt-4 text-gray-400 font-light leading-relaxed">
+                    English is the working language of the MTnG, so the surveys are administered in English. You're free to respond in whichever language feels most natural, including switching mid-answer if that better captures what you mean.
+                </div>
+            </details>
+            
+            <details class="group bg-surface border border-gray-800 p-6 cursor-pointer hover:border-gray-600 transition-colors">
+                <summary class="font-serif text-xl text-white flex justify-between items-center">
+                    What do I get out of it?
+                    <span class="text-ember group-open:rotate-45 transition-transform duration-300 text-2xl font-light">+</span>
+                </summary>
+                <div class="mt-4 text-gray-400 font-light leading-relaxed">
+                    At the end of the 10-week cycle, you will receive a personalized report offering direct insights into your AI usage patterns. This structured feedback will help you understand how your cognitive habits and academic workflow have evolved over the term.
+                </div>
+            </details>
+            
+            <details class="group bg-surface border border-gray-800 p-6 cursor-pointer hover:border-gray-600 transition-colors">
+                <summary class="font-serif text-xl text-white flex justify-between items-center">
+                    How is my data handled?
+                    <span class="text-ember group-open:rotate-45 transition-transform duration-300 text-2xl font-light">+</span>
+                </summary>
+                <div class="mt-4 text-gray-400 font-light leading-relaxed">
+                    Carefully. Download the privacy statement and data notification form below to read the full technical details on your own time.
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <section id="documents" class="py-24 px-6 bg-surfaceLight border-y border-gray-900">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-serif text-3xl mb-4 text-white text-center">Everything you need to decide whether this is for you.</h2>
+            <p class="text-gray-400 font-light text-center mb-12">Official EUI documentation covering rights, retention timelines, and data protocols.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="./Privacy-Statement-Consent-Form.pdf" target="_blank" class="block p-8 border border-gray-800 bg-onyx hover:border-ember transition-all group">
+                    <span class="block text-xs uppercase tracking-[0.2em] text-ember mb-4">Document 01.pdf</span>
+                    <h3 class="text-2xl font-serif text-white mb-3 group-hover:text-ember transition-colors">Privacy Statement & Consent Form</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed mb-6">
+                        The full description of how data is processed, who has access, retention timelines, your rights, and the consent form to sign and return when you enrol.
+                    </p>
+                    <span class="text-sm uppercase tracking-widest text-white group-hover:text-ember transition-colors">Open Document &rarr;</span>
+                </a>
+                
+                <a href="./Data-Notification-Form.pdf" target="_blank" class="block p-8 border border-gray-800 bg-onyx hover:border-ember transition-all group">
+                    <span class="block text-xs uppercase tracking-[0.2em] text-ember mb-4">Document 02.pdf</span>
+                    <h3 class="text-2xl font-serif text-white mb-3 group-hover:text-ember transition-colors">Data Notification Form</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed mb-6">
+                        The technical record of the study's data processing operations, controllers, processors, lawful basis, retention schedule, and security measures, filed under the EUI Data Protection Policy.
+                    </p>
+                    <span class="text-sm uppercase tracking-widest text-white group-hover:text-ember transition-colors">Open Document &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl text-white mb-4">Two researchers. One quiet question.</h2>
+            <p class="text-gray-400 font-light text-lg max-w-3xl mx-auto leading-relaxed">
+                This study is the work of two joint data controllers based at the European University Institute, conducting research independently within the School of Transnational Governance. They share authorship, design responsibility, and the legal duties of care that come with handling participant data.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12 border-t border-gray-800 pt-16">
+            <div>
+                <span class="text-xs uppercase tracking-[0.2em] text-ember block mb-2">Joint researcher · Lead author</span>
+                <h3 class="font-serif text-2xl text-white mb-4">Vladimír Šucha</h3>
+                <p class="text-gray-400 font-light text-sm leading-relaxed mb-6">
+                    Researcher and former Director-General of the European Commission's Joint Research Centre. His work focuses on the relationship between knowledge, public policy, and emerging technologies, with a long-running interest in how scientific evidence enters the political process.
+                </p>
+                <a href="https://www.linkedin.com/in/vladosuchask/?skipRedirect=true" target="_blank" class="text-sm uppercase tracking-widest text-white hover:text-ember transition-colors">View LinkedIn Profile &rarr;</a>
+            </div>
+            
+            <div>
+                <span class="text-xs uppercase tracking-[0.2em] text-ember block mb-2">Joint researcher · Co-author</span>
+                <h3 class="font-serif text-2xl text-white mb-4">Antoine Cerqueira Da Costa</h3>
+                <p class="text-gray-400 font-light text-sm leading-relaxed mb-6">
+                    Master's student at the School of Transnational Governance, EUI, working at the intersection of policy and technology. His contributions to this study span methodological design, fieldwork, and qualitative analysis.
+                </p>
+                <a href="https://www.linkedin.com/in/antoine-cerqueira-da-costa-321265266" target="_blank" class="text-sm uppercase tracking-widest text-white hover:text-ember transition-colors">View LinkedIn Profile &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="participate" class="py-32 px-6 bg-surface border-t border-gray-900">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="font-serif text-4xl md:text-5xl mb-6 text-white">Interested?</h2>
+            <p class="text-gray-300 font-light mb-12 text-lg leading-relaxed">
+                We'd be glad to have you with us. Recruitment is open to MTnG students at the EUI. If you'd like to be involved, or simply hear more before deciding, leave your name and we'll get back to you.
+            </p>
+            
+            <form class="space-y-8 text-left mb-12 bg-onyx border border-gray-800 p-8" onsubmit="event.preventDefault();">
+                <div>
+                    <label class="block text-xs uppercase tracking-[0.1em] text-gray-500 mb-3">Full Name</label>
+                    <input type="text" required class="w-full bg-transparent border-b border-gray-700 py-3 text-white focus:outline-none focus:border-ember transition-colors placeholder-gray-700" placeholder="e.g., Jane Doe">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-[0.1em] text-gray-500 mb-3">EUI Email Address</label>
+                    <input type="email" required class="w-full bg-transparent border-b border-gray-700 py-3 text-white focus:outline-none focus:border-ember transition-colors placeholder-gray-700" placeholder="name@eui.eu">
+                </div>
+                <button type="submit" class="w-full mt-4 bg-white hover:bg-ember text-onyx hover:text-white font-sans font-medium text-sm tracking-widest uppercase py-4 transition-colors">
+                    Join the Study
+                </button>
+            </form>
+
+            <a href="mailto:vladimir.sucha@eui.eu" class="bracket-link text-sm tracking-widest uppercase text-gray-400 hover:text-white transition-colors">
+                Or email the Controller directly
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center bg-onyx border-t border-gray-900 text-xs text-gray-600 uppercase tracking-[0.2em]">
+        <p>&copy; 2026 EUI Research Project. All rights reserved.</p>
+        <p class="mt-2 opacity-50">School of Transnational Governance, Florence.</p>
+    </footer>
+
+</body>
+</html>
